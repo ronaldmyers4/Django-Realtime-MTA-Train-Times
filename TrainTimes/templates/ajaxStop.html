@@ -1,0 +1,11 @@
+{% if validStop.count > 0 %}
+
+{% for validStop in validStop %}
+	<li>{{validStop.stop_name}}</li>
+{% endfor %}
+
+{% else %}
+<li>No matching stop names</li>
+
+{% endif %}
+
